@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="sobre_nos.css">
+    <title>Sobre Nós | Pão com Peixe</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="rhome.html">
+            <i class="bx bx-restaurant mark"></i>
+            <span><strong>Pão Peixe</strong><small>Restaurante</small></span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="rhome.html">Início</a></li>
+                <li><a href="rhome.html#cardapio">Cardápio</a></li>
+                <li><a href="rhome.html#prato-do-dia">Prato do Dia</a></li>
+                <li><a class="active" href="sobre_nos.html">Sobre Nós</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="botnav">
+            <a href="rhome.html#cardapio" aria-label="Pesquisar cardápio">
+                <i class="bx bx-search"></i>
+            </a>
+            <a class="badge" href="rhome.html#cardapio" aria-label="Ver pedidos">
+                <i class="bx bx-cart"></i><b>2</b>
+            </a>
+            <a class="btn" href="rhome.html#cardapio">Fazer Pedido</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="casa">
+            <p class="etiqueta">BEM-VINDO À NOSSA CASA</p>
+            <h1 class="describe1">Mais do que uma refeição,<br>uma experiência.</h1>
+            <p class="introducao">Celebramos os bons sabores, os encontros à mesa e a alegria de receber bem cada pessoa.</p>
+        </section>
+
+        <section class="historia">
+            <div class="imagem-historia" role="img" aria-label="Ambiente do restaurante"></div>
+
+            <div class="informacao1">
+                <h3>QUEM SOMOS</h3>
+                <h2>Uma história feita de sabor e paixão</h2>
+                <p>O Pão com Peixe nasceu de uma ideia simples: criar um lugar onde a boa comida e a hospitalidade andassem sempre juntas.</p>
+                <p>Inspiramo-nos na riqueza dos ingredientes, no cuidado de cada preparação e nos momentos especiais que acontecem à volta de uma mesa.</p>
+                <p>Mais do que servir pratos, queremos proporcionar uma experiência acolhedora, saborosa e memorável.</p>
+                <a class="btn historia-btn" href="#valores">Descubra os nossos valores <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+        </section>
+
+        <section class="objectivo" id="valores">
+            <div class="informacao2">
+                <h3>O NOSSO COMPROMISSO</h3>
+                <h2>O que nos torna especiais?</h2>
+                <p>Trabalhamos todos os dias para oferecer boa comida, qualidade e um ambiente acolhedor a cada cliente.</p>
+            </div>
+
+            <div class="container">
+                <article class="cubo">
+                    <div class="icone-cubo"><i class="bx bx-badge-check"></i></div>
+                    <h4>Qualidade</h4>
+                    <p>Escolhemos ingredientes de qualidade e cuidamos de cada preparação.</p>
+                </article>
+
+                <article class="cubo">
+                    <div class="icone-cubo"><i class="bx bx-heart"></i></div>
+                    <h4>Hospitalidade</h4>
+                    <p>Recebemos cada cliente com atenção, respeito e simpatia.</p>
+                </article>
+
+                <article class="cubo">
+                    <div class="icone-cubo"><i class="bx bx-bowl-hot"></i></div>
+                    <h4>Paixão</h4>
+                    <p>Colocamos dedicação e carinho em cada prato que servimos.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="filosofia">
+            <div class="filosofia-conteudo">
+                <i class="bx bxs-quote-alt-left aspas"></i>
+                <blockquote>“A melhor memória de uma refeição é aquela que nos dá vontade de voltar.”</blockquote>
+                <h4>A filosofia do Pão com Peixe</h4>
+            </div>
+        </section>
+
+        <section class="contacto" id="contacto">
+            <div class="contacto-titulo">
+                <h3>FALE CONNOSCO</h3>
+                <h2>Entre em contacto</h2>
+                <p>Estamos disponíveis para esclarecer as suas dúvidas e receber as suas sugestões.</p>
+            </div>
+
+            <div class="contacto-conteudo">
+                <div class="contacto-info">
+                    <div class="contacto-item">
+                        <i class="bx bx-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>XXX XXX XXX</p>
+                        </div>
+                    </div>
+
+                    <div class="contacto-item">
+                        <i class="bx bx-envelope"></i>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>PaoPeixe@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contacto-item">
+                        <i class="bx bx-map"></i>
+                        <div>
+                             <h4>Localização</h4>
+                        <p>Palanca, Luanda, Angola</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contacto-form">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="O seu nome" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="O seu e-mail" required>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva a sua mensagem..." rows="5" required></textarea>
+
+                    <button class="btn" type="submit">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="sobre">
+        <a class="logo" href="rhome.html">
+            <i class="bx bx-restaurant mark"></i>
+            <span><strong>Pão Peixe</strong><small>Restaurante</small></span>
+        </a>
+
+        <ul>
+            <li><a href="rhome.html">Início</a></li>
+            <li><a href="rhome.html#cardapio">Cardápio</a></li>
+            <li><a href="rhome.html#prato-do-dia">Prato do Dia</a></li>
+            <li><a href="sobre_nos.html">Sobre Nós</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <div class="social">
+            <p>Siga-nos</p>
+            <div>
+                <a href="#" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="bx bxl-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

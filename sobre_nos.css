@@ -1,0 +1,494 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1b1b1f;
+    background-color: #f3f6fa;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111111;
+    color: white;
+    padding: 0 48px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #e8112d;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.logo span {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo strong {
+    font-size: 18px;
+}
+
+.logo small {
+    font-size: 12px;
+    color: #cccccc;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    display: block;
+    font-size: 14px;
+    padding: 28px 0;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    border-bottom-color: #e8112d;
+}
+
+.botnav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.botnav > a:not(.btn) {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.botnav i {
+    font-size: 22px;
+}
+
+.badge {
+    display: flex;
+    align-items: flex-start;
+}
+
+.badge b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    margin-left: 2px;
+    background-color: #e8112d;
+    border-radius: 50%;
+    font-size: 10px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #e8112d;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 22px;
+    border: 2px solid #e8112d;
+    border-radius: 30px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.btn:hover {
+    background-color: #530711;
+    color: white;
+    transform: translateY(-3px);
+    transition-duration: 1s;
+}
+
+.casa {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("imagens/restaurante.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 30px;
+}
+
+.casa .etiqueta {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.casa .describe1 {
+    font-size: 48px;
+    line-height: 1.3;
+}
+
+.casa .introducao {
+    max-width: 650px;
+    font-size: 17px;
+}
+
+.historia {
+    background-color: #e2dad1;
+    padding: 70px 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.imagem-historia {
+    background-image: url("imagens/historia.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    min-height: 400px;
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.informacao1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.informacao1 h3 {
+    font-size: 14px;
+    color: #e8112d;
+    letter-spacing: 2px;
+}
+
+.informacao1 h2 {
+    font-size: 32px;
+    line-height: 1.3;
+    color: #111111;
+}
+
+.informacao1 p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #45413e;
+}
+
+.historia-btn {
+    margin-top: 10px;
+}
+
+.objectivo {
+    background-color: #f3f6fa;
+    padding: 70px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.informacao2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 750px;
+    margin-bottom: 25px;
+}
+
+.informacao2 h3 {
+    color: #e8112d;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.informacao2 h2 {
+    color: #111111;
+    font-size: 36px;
+}
+
+.informacao2 p {
+    color: #555555;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.cubo {
+    flex: 1;
+    padding: 30px 25px;
+    background-color: white;
+    border: 1px solid #e8ded4;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.icone-cubo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 20px;
+    background-color: #fff0f1;
+    border-radius: 12px;
+    color: #e8112d;
+}
+
+.icone-cubo i {
+    font-size: 28px;
+}
+
+.cubo h4 {
+    color: #111111;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.cubo p {
+    color: #555555;
+    font-size: 15px;
+}
+
+.filosofia {
+    background-color: #111111;
+    color: white;
+    padding: 65px 30px;
+    text-align: center;
+}
+
+.filosofia-conteudo {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.aspas {
+    display: block;
+    color: #e8112d;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.filosofia blockquote {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.filosofia h4 {
+    margin-top: 20px;
+    color: #e8112d;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.contacto {
+    background-color: #e2dad1;
+    padding: 70px 48px;
+}
+
+.contacto-titulo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contacto-titulo h3 {
+    color: #e8112d;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.contacto-titulo h2 {
+    color: #111111;
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.contacto-titulo p {
+    color: #555555;
+    font-size: 16px;
+}
+
+.contacto-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contacto-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 15px;
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contacto-item > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #e8112d;
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
+}
+
+.contacto-item h4 {
+    color: #111111;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.contacto-item p {
+    color: #555555;
+    font-size: 14px;
+}
+
+.contacto-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contacto-form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #111111;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.contacto-form textarea {
+    resize: vertical;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+    outline: 1px solid #e8112d;
+    border-color: #e8112d;
+}
+
+.contacto-form button {
+    align-self: flex-start;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 48px;
+    background-color: #111111;
+    color: white;
+}
+
+footer ul {
+    display: flex;
+    gap: 25px;
+    font-size: 12px;
+    color: #dddddd;
+}
+
+footer ul a:hover {
+    color: #e8112d;
+}
+
+.social p {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #cccccc;
+}
+
+.social div {
+    display: flex;
+    gap: 10px;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.social a:hover {
+    background-color: #e8112d;
+    color: white;
+}
